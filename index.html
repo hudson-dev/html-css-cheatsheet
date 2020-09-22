@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HTML Cheatsheet</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+</head>
+
+<!-- header -->
+<header>
+    <div id="title">
+        <h2><span style="color: #939598;">Cheatsheets</span> <span style="color: #FFB764">/</span> Learn HTML</h2>
+        <h1>Tables</h1>
+    </div>
+</header>
+
+<!-- body -->
+
+<body>
+    <table>
+
+        <tr>
+            <th>
+                <!-- <section> -->
+                <h1 class="section-title table-title">Tag Name</h1>
+                <h2 class="section-paragraph table-title">Description</h2>
+                <pre class="code-snippet table-code">
+                <code>
+  <span class = "comment">&lt;!-- CODE EXAMPLE --&gt;</span>
+                </code>
+              </pre>
+                <!-- </section> -->
+            </th>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">&lt;table&gt; Table Element</h1>
+                <p class="section-paragraph">In HTML, the <span class="code-word">&lt;table&gt;</span> element has
+                    content that is used to represent a two-dimensional table made of rows and columns.</p>
+                <pre class="code-snippet">
+            <code>
+    <span class = "tag">&lt;table&gt;</span>
+      <span class = "comment">&lt;!-- rows and columns will go here --&gt;</span>
+    <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">&lt;table&gt; Table Row Element</h1>
+                <p class="section-paragraph">The table row element, <span class="code-word">&lt;tr&gt;</span>, is used
+                    to add rows to a table before adding table data and table headings.</p>
+                <pre class="code-snippet">
+            <code>
+  <span class = "tag">&lt;table&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      ...
+    <span class = "tag">&lt;/tr&gt;</span>
+  <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">&lt;td&gt; Table Data Element</h1>
+                <p class="section-paragraph">The table data element, <span class="code-word">&lt;td&gt;</span>, can be
+                    nested inside a table row element, <span class="code-word">&lt;tr&gt;</span>, to add a cell of data
+                    to a table.</p>
+                <pre class="code-snippet">
+            <code>
+    <span class = "tag">&lt;table&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>cell one data<span class = "tag">&lt;td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>cell two data<span class = "tag">&lt;td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">colspan Attribute</h1>
+                <p class="section-paragraph">The <span class="code-word">colspan</span>attribute on a table header <span
+                        class="code-word">&lt;th&gt;</span> or table data <span class="code-word">&lt;td&gt;</span>
+                    element indicates how many columns that particular cell should sapn within the table. The <span
+                        class="code-word">colspan</span> value is set to 1 by default and will take any positive integer
+                    between 1 and 1000.</p>
+                <pre class="code-snippet">
+            <code>
+  <span class = "tag">&lt;table&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;th&gt;</span>row 1:<span class = "tag">&lt;/th&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 1<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 2<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 3<span class = "tag">&lt;/td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;th&gt;</span>row 2:<span class = "tag">&lt;/th&gt;</span>
+      <span class = "tag">&lt;td</span> <span class = "attribute">colspan</span>=<span class = "attribute-value">"2"</span><span class = "tag">&gt;</span> col 1 (will span 2 columns)<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 2<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 3<span class = "tag">&lt;/td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+  <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">rowspan Attribute</h1>
+                <p class="section-paragraph">Similar to <span class="code-word">colspan</span>the <span
+                        class="code-word">&lt;rowspan&gt;</span> attribute on a table header or table data element
+                    indicates how many rows that particular cell should span within the table. The <span
+                        class="code-word">rowspan</span> value is set to 1 by default and will take any positive integer
+                    up to 65534.</p>
+                <pre class="code-snippet">
+            <code>
+  <span class = "tag">&lt;table&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;th&gt;</span>row 1:<span class = "tag">&lt;/th&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 1<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 2<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 3<span class = "tag">&lt;/td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;th&gt;</span>row 2:<span class = "tag">&lt;/th&gt;</span>
+      <span class = "tag">&lt;td</span> <span class = "attribute">rowspan</span>=<span class = "attribute-value">"2"</span><span class = "tag">&gt;</span> row 2 (this row will span 2 rows)<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 1<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 2<span class = "tag">&lt;/td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 1<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 2<span class = "tag">&lt;/td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>row 3<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 1<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>col 2<span class = "tag">&lt;/td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+  <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">&lt;tbody&gt; Table Body Element</h1>
+                <p class="section-paragraph">The table body element, <span class="code-word">&lt;tbody&gt;</span>, is a
+                    semantic element that will contain all table data other than table heading and table footer content.
+                    If used, <span class="code-word">&lt;tbody&gt;</span> will contain all table row <span
+                        class="code-word">&lt;tr&gt;</span> element, and indicates that <span
+                        class="code-word">&lt;tr&gt;</span> elements make up the body of the table. <span
+                        class="code-word">&lt;table&gt;</span> cannot have both <span
+                        class="code-word">&lt;tbody&gt;</span> and <span class="code-word">&lt;tr&gt;</span> as direct
+                    children.</p>
+                <pre class="code-snippet">
+            <code>
+  <span class = "tag">&lt;table&gt;</span>
+    <span class = "tag">&lt;tbody&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+        <span class = "tag">&lt;td&gt;</span>row 1<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;/tr&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+        <span class = "tag">&lt;td&gt;</span>row 2<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;/tr&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+        <span class = "tag">&lt;td&gt;</span>row 3<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;/tbody&gt;</span>
+  <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">&lt;thead&gt; Table Head Element</h1>
+                <p class="section-paragraph">The table head element,<span class="code-word">&lt;thead&gt;</span>,
+                    defines the headings of table columns encapsulated in table rows.</p>
+                <pre class="code-snippet">
+            <code>
+  <span class = "tag">&lt;table&gt;</span>
+    <span class = "tag">&lt;thead&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+        <span class = "tag">&lt;/th&gt;</span>heading 1<span class = "tag">&lt;/th&gt;</span>
+        <span class = "tag">&lt;/th&gt;</span>heading 2<span class = "tag">&lt;/th&gt;</span>
+      <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;/thead&gt;</span>
+    <span class = "tag">&lt;tbody&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+        <span class = "tag">&lt;/td&gt;</span>col 1<span class = "tag">&lt;/td&gt;</span>
+        <span class = "tag">&lt;/td&gt;</span>col 2<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;/tbody&gt;</span>
+  <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">&lt;tfoot&gt; Table Footer Element</h1>
+                <p class="section-paragraph">The table footer element, <span class="code-word">&lt;tfoot&gt;</span>,
+                    uses table rows to give footer content or to summarize content at the end of a table.</p>
+                <pre class="code-snippet">
+            <code>
+  <span class = "tag">&lt;table&gt;</span>
+    <span class = "tag">&lt;thead&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+        <span class = "tag">&lt;/th&gt;</span>heading 1<span class = "tag">&lt;/th&gt;</span>
+        <span class = "tag">&lt;/th&gt;</span>heading 2<span class = "tag">&lt;/th&gt;</span>
+      <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;/thead&gt;</span>
+    <span class = "tag">&lt;tbody&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+        <span class = "tag">&lt;/td&gt;</span>col 1<span class = "tag">&lt;/td&gt;</span>
+        <span class = "tag">&lt;/td&gt;</span>col 2<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;/tbody&gt;</span>
+    <span class = "tag">&lt;tfoot&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+        <span class = "tag">&lt;/td&gt;</span>summary of col 1<span class = "tag">&lt;/td&gt;</span>
+        <span class = "tag">&lt;/td&gt;</span>summary of col 2<span class = "tag">&lt;/td&gt;</span>
+      <span class = "tag">&lt;/tr&gt;</span>
+    <span class = "tag">&lt;/tfoot&gt;</span>
+  <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 class="section-title">&lt;th&gt; Table Heading Element</h1>
+                <p class="section-paragraph">The table heading element, <span class="code-word">&lt;th&gt;</span>, is
+                    used to add titles to rows and columns of a table and must be enclosed in a table row element, <span
+                        class="code-word">&lt;tr&gt;</span>.</p>
+                <pre class="code-snippet">
+            <code>
+  <span class = "tag">&lt;table&gt;</span>
+    <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;th&gt;</span>column one<span class = "tag">&lt;td&gt;</span>
+      <span class = "tag">&lt;th&gt;</span>column two<span class = "tag">&lt;td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+      <span class = "tag">&lt;tr&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>1<span class = "tag">&lt;td&gt;</span>
+      <span class = "tag">&lt;td&gt;</span>2<span class = "tag">&lt;td&gt;</span>
+    <span class = "tag">&lt;/tr&gt;</span>
+  <span class = "tag">&lt;/table&gt;</span>
+            </code>
+          </pre>
+            </section>
+        </tr>
+
+        <tr>
+            <section>
+                <h1 id="end">You've made it to the end! &#128512;</h1>
+            </section>
+        </tr>
+
+    </table>
+</body>
+
+</html>
